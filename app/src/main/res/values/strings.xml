@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FeebBack</string>
+    <string name="tab_text_1">Add New</string>
+    <string name="tab_text_2">View All</string>
+    <string name="tab_text_3">Update</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update_title">Update Records</string>
+    <string name="create_title">Add Feedback</string>
+    <string name="home_title">View feedback</string>
+    <string name="level_1">1</string>
+    <string name="level_2">2</string>
+    <string name="level_3">3</string>
+    <string name="level_4">4</string>
+    <string name="level_5">5</string>
+    <string name="module_name">Module Name</string>
+    <string name="what_aspects_of_this_module_or_module_section_need_to_be_improved">What aspects of this module or module section need to be improved?</string>
+    <string name="the_learning_outcomes_were_clearly_communicated">The learning outcomes were clearly communicated.</string>
+    <string name="the_learning_opportunities_enabled_me_to_achieve_the_learning_outcomes">The learning opportunities enabled me to achieve the learning outcomes.</string>
+    <string name="the_relevance_of_the_module_to_my_qualification_was_clear_to_me">The relevance of the module to my qualification was clear to me.</string>
+    <string name="the_lecturer_responded_in_a_comprehensive_and_timely_way">The lecturer responded in a comprehensive and timely way.</string>
+    <string name="the_technology_enhanced_teaching_and_assessment_enriched_my_learning">The Technology-enhanced teaching and assessment enriched my learning.</string>
+    <string name="submit_label">Submit</string>
+    <string name="info_text_label">Select the value that corresponds to the level at which the statement is true for you, where 1 representing highly false scenario and level 5 representing highly true scenario.</string>
+</resources>

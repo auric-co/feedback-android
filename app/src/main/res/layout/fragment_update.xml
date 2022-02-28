@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UpdateFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <RelativeLayout
+            android:id="@+id/form_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/section_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/update_title"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/section_label"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/info_text_label" />
+
+            <TextView
+                android:id="@+id/EditText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info"
+                android:layout_marginTop="14dp"
+                android:text="ID" />
+
+            <EditText
+                android:id="@+id/data_id"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditText1"
+                android:layout_marginTop="10dp"
+                android:autofillHints="ID" />
+            <TextView
+                android:id="@+id/EditTextHeader1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/data_id"
+                android:layout_marginTop="14dp"
+
+                android:text="@string/module_name" />
+
+            <EditText
+                android:id="@+id/module_name"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditTextHeader1"
+                android:layout_marginTop="10dp"
+                android:autofillHints="Enter module name" />
+
+            <TextView
+                android:id="@+id/header1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/module_name"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/the_learning_outcomes_were_clearly_communicated" />
+
+            <RadioGroup
+                android:id="@+id/outcomes_communicated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header1"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/oc_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_1" />
+
+                <RadioButton
+                    android:id="@+id/oc_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_2" />
+
+                <RadioButton
+                    android:id="@+id/oc_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_3" />
+
+                <RadioButton
+                    android:id="@+id/oc_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_4" />
+
+                <RadioButton
+                    android:id="@+id/oc_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_5" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/header2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/outcomes_communicated"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/the_learning_opportunities_enabled_me_to_achieve_the_learning_outcomes" />
+
+            <RadioGroup
+                android:id="@+id/outcomes_achieved"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header2"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/oa_1"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_1" />
+
+                <RadioButton
+                    android:id="@+id/oa_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_2" />
+
+                <RadioButton
+                    android:id="@+id/oa_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_3" />
+
+                <RadioButton
+                    android:id="@+id/oa_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_4" />
+
+                <RadioButton
+                    android:id="@+id/oa_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_5" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/header3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/outcomes_achieved"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/the_relevance_of_the_module_to_my_qualification_was_clear_to_me" />
+
+            <RadioGroup
+                android:id="@+id/relevance_clarity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header3"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rc_1"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_1" />
+
+                <RadioButton
+                    android:id="@+id/rc_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_2" />
+
+                <RadioButton
+                    android:id="@+id/rc_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_3" />
+
+                <RadioButton
+                    android:id="@+id/rc_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_4" />
+
+                <RadioButton
+                    android:id="@+id/rc_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_5" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/header4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relevance_clarity"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/the_lecturer_responded_in_a_comprehensive_and_timely_way" />
+
+            <RadioGroup
+                android:id="@+id/lecture_response"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header4"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/lr_1"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_1" />
+
+                <RadioButton
+                    android:id="@+id/lr_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_2" />
+
+                <RadioButton
+                    android:id="@+id/lr_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_3" />
+
+                <RadioButton
+                    android:id="@+id/lr_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_4" />
+
+                <RadioButton
+                    android:id="@+id/lr_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_5" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/header5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lecture_response"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/the_technology_enhanced_teaching_and_assessment_enriched_my_learning" />
+
+            <RadioGroup
+                android:id="@+id/learning_enriched"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header5"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/le_1"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_1" />
+
+                <RadioButton
+                    android:id="@+id/le_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_2" />
+
+                <RadioButton
+                    android:id="@+id/le_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_3" />
+
+                <RadioButton
+                    android:id="@+id/le_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_4" />
+
+                <RadioButton
+                    android:id="@+id/le_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level_5" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/EditTextHeader2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/learning_enriched"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/what_aspects_of_this_module_or_module_section_need_to_be_improved" />
+
+            <EditText
+                android:id="@+id/improvement_needed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/learning_enriched"
+                android:layout_marginTop="48dp"
+                android:autofillHints="Explain here....."
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/update_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/improvement_needed"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="170dp"
+                android:text="@string/submit_label" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
